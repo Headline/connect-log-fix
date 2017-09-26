@@ -28,7 +28,7 @@ def GITVersion():
 def ReleaseVersion():
 	if platform == 'linux':
 		string = str(os.environ.get('TRAVIS_BUILD_DIR', ''))
-		productFile = open(string + 'product.version', 'r')
+		productFile = open(string + '/product.version', 'r')
 	else:
 		productFile = open('c:\projects\connect-log-fix\product.version', 'r')
 
