@@ -31,6 +31,7 @@
 
 #ifndef _INCLUDE_SOURCEMOD_EXTENSION_BASESDK_H_
 #define _INCLUDE_SOURCEMOD_EXTENSION_BASESDK_H_
+//#define _snprintf snprintf
 
 /**
  * @file smsdk_ext.h
