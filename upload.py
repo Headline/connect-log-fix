@@ -26,7 +26,7 @@ def GITVersion():
 	return stdout.rstrip('\r\n')
 
 def ReleaseVersion():
-	productFile = open('product.version', 'r')
+	productFile = open('c:\projects\connect-log-fix\product.version', 'r')
 	productContents = productFile.read()
 	productFile.close()
 
