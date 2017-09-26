@@ -26,7 +26,12 @@ def GITVersion():
 	return stdout.rstrip('\r\n')
 
 def ReleaseVersion():
-	productFile = open('c:\projects\connect-log-fix\product.version', 'r')
+	if platform == 'linux':
+		string = str(os.environ.get('TRAVIS_PULL_REQUEST', ''))
+		productFile = open(string + 'product.version', 'r')
+	else:
+		productFile = open('c:\projects\connect-log-fix\product.version', 'r')
+
 	productContents = productFile.read()
 	productFile.close()
 
