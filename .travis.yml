@@ -15,10 +15,10 @@ addons:
 compiler:
   - clang
 before_script:
-  - git clone --branch=master --recursive https://github.com/alliedmodders/sourcemod
+  - git clone --branch=1.8-dev --recursive https://github.com/alliedmodders/sourcemod
   - git clone --branch=master https://github.com/alliedmodders/ambuild		
   - git clone --branch=csgo https://github.com/alliedmodders/hl2sdk hl2sdk-csgo		
-  - git clone --branch=master https://github.com/alliedmodders/metamod-source		
+  - git clone --branch=1.10-dev https://github.com/alliedmodders/metamod-source		
   - echo "Sucessfully downloaded dependencies to build against..."
   - cd ambuild && python setup.py install --user		
   - echo "ambuild has been installed..."
